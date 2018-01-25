@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:onClick="processPageAction"
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="processBack"
+            android:id="@+id/rtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <Button
+            android:onClick="processNext"
+            android:id="@+id/rtn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"/>
+
+        <Button
+            android:onClick="processReload"
+            android:id="@+id/rtn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload"/>
+
+        <Button
+            android:onClick="processClean"
+            android:id="@+id/rtn_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
